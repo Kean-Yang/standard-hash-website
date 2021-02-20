@@ -1,0 +1,36 @@
+@import '../../styles/variables';
+
+.BuyButton {
+    margin: 0 auto;
+    text-align: center;
+    .BuyButton-content {
+        border: 1px solid #ffffff;
+        box-sizing: border-box;
+        border-radius: 15px;
+        padding: 5px;
+        display: inline-block;
+        margin: 0 auto;
+        text-align: center;
+        .ant-btn.ant-btn-loading:not([disabled]) {
+            color: $DarkColor;
+        }
+        .ant-btn > .ant-btn-loading-icon {
+            color: #1890ff;
+        }
+    }
+
+    @media screen and (max-width: $MobileWidth-M) {
+        width: 92%;
+        margin: 0 auto;
+        .BuyButton-content {
+            border: 1px solid #ffffff;
+            box-sizing: border-box;
+            border-radius: 15px;
+            padding: 5px;
+            display: inline-block;
+            width: 98%;
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+}

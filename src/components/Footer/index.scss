@@ -1,0 +1,273 @@
+@import '../../styles/variables';
+
+@media screen and (min-width: 961px) {
+    .page-footer {
+        width: 100%;
+        overflow: hidden;
+        max-width: $MaxWidth;
+        margin: 0 auto;
+        display: contents;
+        display: inline-block;
+        position: relative;
+        min-height: 86px;
+
+        .certification {
+            margin: 26px 26px;
+            float: left;
+
+            p {
+                font-weight: normal;
+                font-size: 10px;
+                line-height: 15px;
+                text-align: center;
+                color: #ffffff;
+                text-align: left;
+                display: block;
+            }
+
+            .mb {
+                width: 134px;
+                height: 36px;
+                background: url('../../assets/mb.png') no-repeat center;
+                background-size: cover;
+
+                &:hover {
+                    width: 134px;
+                    height: 36px;
+                    background: url('../../assets/mb-logo.png') no-repeat center;
+                    background-size: cover;
+                }
+            }
+        }
+
+        .certification-miners-stats {
+            margin: 26px 26px;
+            float: left;
+
+            p {
+                font-weight: normal;
+                font-size: 10px;
+                line-height: 15px;
+                text-align: center;
+                color: #ffffff;
+                text-align: left;
+                display: block;
+            }
+
+            .mb {
+                width: 134px;
+                height: 36px;
+                background: url('../../assets/socials/miners_stats.png') no-repeat center;
+                background-size: cover;
+
+                &:hover {
+                    width: 134px;
+                    height: 36px;
+                    background: url('../../assets/socials/miners_stats_hover.png') no-repeat center;
+                    background-size: cover;
+                }
+            }
+        }
+
+        .certification-audit-report {
+            margin: 26px 26px;
+            float: left;
+
+            p {
+                font-weight: normal;
+                font-size: 10px;
+                line-height: 15px;
+                text-align: center;
+                color: #ffffff;
+                text-align: left;
+                display: block;
+            }
+
+            .mb {
+                width: 134px;
+                height: 36px;
+                background: url('../../assets/socials/beosin.png') no-repeat center;
+                background-size: 100%;
+
+                &:hover {
+                    width: 134px;
+                    height: 36px;
+                    background: url('../../assets/socials/beosin-bg.png') no-repeat center;
+                    background-size: 100%;
+                }
+            }
+        }
+
+        .contact-us {
+            display: flex;
+            right: 0;
+            float: right;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: absolute;
+            bottom: 10px;
+
+            a {
+                margin: 0 3px;
+
+                img {
+                    font-size: 25px;
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .page-footer {
+        overflow: hidden;
+        max-width: $MaxWidth;
+        min-height: 132px;
+        margin: 24px auto 0;
+        width: 92%;
+
+        .certification {
+            margin: 0;
+            float: left;
+
+            p {
+                font-weight: normal;
+                font-size: 10px;
+                line-height: 15px;
+                text-align: center;
+                color: #ffffff;
+                text-align: left;
+                display: block;
+            }
+
+            .mb {
+                width: 134px;
+                height: 36px;
+                background: url('../../assets/mb.png') no-repeat center;
+                background-size: cover;
+
+                &:hover {
+                    width: 134px;
+                    height: 36px;
+                    background: url('../../assets/mb-logo.png') no-repeat center;
+                    background-size: cover;
+                }
+            }
+        }
+
+        .certification-miners-stats {
+            margin-left: 26px;
+            float: left;
+
+            p {
+                font-weight: normal;
+                font-size: 10px;
+                line-height: 15px;
+                text-align: center;
+                color: #ffffff;
+                text-align: left;
+                display: block;
+            }
+
+            .mb {
+                width: 134px;
+                height: 36px;
+                background: url('../../assets/socials/miners_stats.png') no-repeat center;
+                background-size: cover;
+
+                &:hover {
+                    width: 134px;
+                    height: 36px;
+                    background: url('../../assets/socials/miners_stats_hover.png') no-repeat center;
+                    background-size: cover;
+                }
+            }
+        }
+
+
+
+        .contact-us {
+            display: flex;
+            right: 0;
+            float: right;
+            margin-top: 36px;
+
+            a {
+                margin: 0 3px;
+
+                img {
+                    font-size: 25px;
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .certification-audit-report {
+        margin-left: 26px;
+        float: left;
+
+        p {
+            font-weight: normal;
+            font-size: 10px;
+            line-height: 15px;
+            text-align: center;
+            color: #ffffff;
+            text-align: left;
+            display: block;
+        }
+
+        .mb {
+            width: 134px;
+            height: 36px;
+            background: url('../../assets/socials/beosin.png') no-repeat center;
+            background-size: 100%;
+
+            &:hover {
+                width: 134px;
+                height: 36px;
+                background: url('../../assets/socials/beosin-bg.png') no-repeat center;
+                background-size: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 468px) {
+    .certification-audit-report {
+        margin-left: 0;
+        float: left;
+        margin-top: 12px;
+        margin-bottom: 12px;
+
+        p {
+            font-weight: normal;
+            font-size: 10px;
+            line-height: 15px;
+            text-align: center;
+            color: #ffffff;
+            text-align: left;
+            display: block;
+        }
+
+        .mb {
+            width: 134px;
+            height: 36px;
+            background: url('../../assets/socials/beosin.png') no-repeat center;
+            background-size: cover;
+
+            &:hover {
+                width: 134px;
+                height: 36px;
+                background: url('../../assets/socials/beosin-bg.png') no-repeat center;
+                background-size: cover;
+            }
+        }
+    }
+}

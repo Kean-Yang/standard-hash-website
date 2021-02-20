@@ -1,0 +1,11 @@
+@import '../../styles/variables';
+.management-page {
+    text-align: left;
+    .management-from {
+        background-color: white;
+        padding: 24px 100px;
+        .admin-confirm {
+            margin-right: 24px;
+        }
+    }
+}

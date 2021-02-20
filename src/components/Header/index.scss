@@ -1,0 +1,368 @@
+@import '../../styles/variables';
+
+.page-header {
+    width: 100%;
+    padding: 0 !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background-color: #15163d;
+    box-shadow: 0px 0px 3px 2px rgba(255, 255, 255, 0.2);
+
+    @media screen and (min-width: $MobileWidth-M) {
+        .header {
+            max-width: $MaxWidth;
+            position: relative;
+            margin: 0 auto;
+
+            .keyworder {
+                font-size: 14px;
+                line-height: 20px;
+                text-align: left;
+                color: #ffffff;
+                margin: 0 26px;
+                padding: 4px 0;
+            }
+
+            .nav-logo {
+                width: 84px;
+                height: 26px;
+                display: inline-block;
+                position: absolute;
+                left: 26px;
+                top: 22px;
+                z-index: 99;
+
+                img {
+                    width: 100%;
+                    cursor: pointer;
+                }
+            }
+
+            .nav-whitepaper {
+                line-height: 34px;
+                border: 1px solid rgba(255, 255, 255, 0.5);
+                border-radius: 5px;
+                padding: 0 16px;
+                color: #ffffff;
+                font-weight: normal;
+                font-size: $NavFontSize;
+                position: absolute;
+                top: 18px;
+                margin-left: 40px;
+                left: 140px;
+                z-index: 99;
+
+                a {
+                    color: #ffffff;
+                }
+
+                img {
+                    width: 20px;
+                    margin-right: 16px;
+                    display: inline-block;
+                }
+
+                &:hover {
+                    background-color: white;
+                    color: $DarkColor;
+
+                    a {
+                        color: $DarkColor;
+                    }
+
+                    img {
+                        width: 20px;
+                        color: $DarkColor;
+                        background-color: $DarkColor;
+                        margin-right: 16px;
+                        display: inline-block;
+                    }
+                }
+            }
+
+
+            .nav {
+                height: 52px;
+                font-style: normal;
+                width: 100%;
+                max-width: $MaxWidth;
+                margin: 0 auto;
+                position: relative;
+
+                .nav-link {
+                    text-align: center;
+                    display: block;
+                    position: absolute;
+                    width: 100%;
+                    margin-top: 16px;
+
+                    a {
+                        padding: 0 42px;
+                        overflow: hidden;
+                        display: inline-block;
+                        color: rgba(255, 255, 255, 0.5);
+
+                        p {
+                            font-weight: normal;
+                            font-size: $NavFontSize;
+                            text-align: center;
+                            letter-spacing: 0.12em;
+                        }
+                    }
+
+                    .active {
+                        p {
+                            color: white;
+                            font-weight: 500;
+                        }
+                    }
+                }
+
+                .nav-Wallet {
+                    line-height: 34px;
+                    border: 1px solid rgba(255, 255, 255, 0.5);
+                    border-radius: 5px;
+                    padding: 0 16px;
+                    color: #ffffff;
+                    font-weight: normal;
+                    font-size: $NavFontSize;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    margin: 18px 26px 8px;
+                    display: inline-flex;
+                    cursor: pointer;
+
+                    img {
+                        width: 20px;
+                        margin-right: 16px;
+                    }
+
+                    &:hover {
+                        background-color: white;
+                        color: #15163d;
+                    }
+
+                    .balance {
+                        background-color: white;
+                        color: $DarkColor;
+                    }
+                }
+
+                .nav-Wallet-account {
+                    line-height: 34px;
+                    border: 1px solid rgba(255, 255, 255, 1);
+                    border-radius: 5px;
+                    color: #ffffff;
+                    font-weight: normal;
+                    font-size: $NavFontSize;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    margin: 18px 26px 8px;
+                    display: inline-flex;
+                    cursor: pointer;
+
+                    a {
+                        color: #ffffff;
+                    }
+
+                    &:hover {
+                        background-color: white;
+                        color: #15163d;
+
+                        a {
+                            color: #15163d;
+                        }
+                    }
+
+                    .balance {
+                        background-color: white;
+                        color: $DarkColor;
+                        padding: 0 6px;
+                    }
+
+                    .account {
+                        background-color: $BgColor;
+                        font-size: $NavFontSize;
+                        color: white;
+                        padding: 0 6px;
+                        border-radius: 5px !important;
+                        -webkit-border-radius: 5px !important;
+                        -moz-border-radius: 5px !important;
+                        -ms-border-radius: 5px !important;
+                        -o-border-radius: 5px !important;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: $MobileWidth-M) {
+        .header {
+            max-width: $MaxWidth;
+            margin: 0 auto;
+
+            .keyworder {
+                font-size: 14px;
+                line-height: 20px;
+                text-align: left;
+                color: #ffffff;
+                margin: 0 26px;
+                padding: 4px 0;
+            }
+
+            .nav-logo {
+                width: 84px;
+                height: 26px;
+                display: inline-block;
+                float: left;
+                position: absolute;
+                left: 26px;
+                top: 22px;
+                z-index: 99;
+
+                img {
+                    width: 100%;
+                    cursor: pointer;
+                }
+            }
+
+            .nav-whitepaper {
+                line-height: 34px;
+                border: 1px solid rgba(255, 255, 255, 0.5);
+                border-radius: 5px;
+                padding: 0 16px;
+                color: #ffffff;
+                font-weight: normal;
+                font-size: $NavFontSize;
+                margin: 18px 0 0 40px;
+                float: left;
+                display: none;
+
+                a {
+                    color: #ffffff;
+                }
+
+                img {
+                    width: 20px;
+                    margin-right: 16px;
+                    display: inline-block;
+                }
+            }
+
+            .nav {
+                height: 52px;
+                font-style: normal;
+                width: 100%;
+                max-width: $MaxWidth;
+                margin: 0 auto;
+                position: relative;
+
+                .nav-link {
+                    text-align: center;
+                    display: block;
+                    position: absolute;
+                    width: 100%;
+                    margin-top: 16px;
+
+                    a {
+                        padding: 0 42px;
+                        overflow: hidden;
+                        display: inline-block;
+                        color: rgba(255, 255, 255, 0.5);
+
+                        p {
+                            font-weight: normal;
+                            font-size: $NavFontSize;
+                            text-align: center;
+                            letter-spacing: 0.12em;
+                        }
+                    }
+
+                    .active {
+                        p {
+                            color: white;
+                            font-weight: 500;
+                        }
+                    }
+                }
+
+                .nav-Wallet {
+                    line-height: 34px;
+                    border: 1px solid rgba(255, 255, 255, 0.5);
+                    border-radius: 5px;
+                    padding: 0 16px;
+                    color: #ffffff;
+                    font-weight: normal;
+                    font-size: $NavFontSize;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    margin: 18px 26px 8px;
+                    display: inline-flex;
+                    cursor: pointer;
+
+                    img {
+                        width: 20px;
+                        margin-right: 16px;
+                    }
+
+                    &:hover {
+                        background-color: white;
+                        color: #15163d;
+                    }
+                }
+
+                .nav-Wallet-account {
+                    line-height: 34px;
+                    border: 1px solid rgba(255, 255, 255, 1);
+                    border-radius: 5px;
+                    color: #ffffff;
+                    font-weight: normal;
+                    font-size: $NavFontSize;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    margin: 18px 26px 8px;
+                    display: inline-flex;
+                    cursor: pointer;
+
+                    a {
+                        color: #ffffff;
+                    }
+
+                    &:hover {
+                        background-color: white;
+                        color: #15163d;
+
+                        a {
+                            color: #15163d;
+                        }
+                    }
+
+                    .balance {
+                        background-color: white;
+                        color: $DarkColor;
+                        padding: 0 6px;
+                    }
+
+                    .account {
+                        background-color: $BgColor;
+                        font-size: $NavFontSize;
+                        color: white;
+                        padding: 0 6px;
+                        border-radius: 5px !important;
+                        -webkit-border-radius: 5px !important;
+                        -moz-border-radius: 5px !important;
+                        -ms-border-radius: 5px !important;
+                        -o-border-radius: 5px !important;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,63 @@
+@import '../../styles/variables';
+
+.UnlockWalletpage {
+    overflow: hidden;
+    border: 1px solid #ffffff;
+    box-sizing: border-box;
+    border-radius: 15px;
+    margin: 30% auto 0 auto;
+    width: $UnlockWalletButWidth;
+
+    .UnlockWalletpage-content {
+        width: 98%;
+        height: 60px;
+        margin: 1%;
+        border: 1px solid #ffffff;
+        text-align: center;
+        font-weight: normal;
+        font-size: 18px;
+        border-radius: 15px;
+        text-align: center;
+        color: #ffffff;
+        display: flex;
+        /*盒子模型*/
+        flex-direction: row;
+        /*横向*/
+        justify-content: space-around;
+        /*主轴居中*/
+        align-items: center;
+        /*纵轴居中*/
+        cursor: pointer;
+    }
+
+    @media screen and (max-width: $MobileWidth-M) {
+        overflow: hidden;
+        border: 1px solid #ffffff;
+        box-sizing: border-box;
+        border-radius: 15px;
+        width: 92%;
+        margin: 30% auto 0 auto;
+
+        .UnlockWalletpage-content {
+            width: 98%;
+            height: 60px;
+            margin: 1%;
+            border: 1px solid #ffffff;
+            text-align: center;
+            font-weight: normal;
+            font-size: 18px;
+            border-radius: 15px;
+            text-align: center;
+            color: #ffffff;
+            display: flex;
+            /*盒子模型*/
+            flex-direction: row;
+            /*横向*/
+            justify-content: space-around;
+            /*主轴居中*/
+            align-items: center;
+            /*纵轴居中*/
+            cursor: pointer;
+        }
+    }
+}

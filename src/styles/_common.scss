@@ -1,0 +1,278 @@
+@import './_variables.scss';
+
+/*单行溢出*/
+.one-txt-cut {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/*多行溢出 手机端使用*/
+.txt-cut {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    word-wrap: break-word;
+    /* -webkit-line-clamp: 2; */
+    -webkit-box-orient: vertical;
+}
+
+/*深色按钮*/
+.operation-dark-but {
+    min-width: $ButWidth;
+    height: 60px;
+    border: 1px solid #ffffff;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: #15163d;
+    color: #ffffff;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+
+    @media screen and (min-width: $MobileWidth-M) {
+        &:hover {
+            min-width: $ButWidth;
+            height: 60px;
+            border: 1px solid #ffffff;
+            box-sizing: border-box;
+            border-radius: 10px;
+            background-color: #ffffff;
+            color: #15163d;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            text-align: center;
+            animation-duration: 0.5s;
+        }
+    }
+
+    @media screen and (max-width: $MobileWidth-M) {
+        min-width: $BoxButWidth-M;
+        height: 60px;
+        border: 1px solid #ffffff;
+        box-sizing: border-box;
+        border-radius: 10px;
+        background-color: #15163d;
+        color: #ffffff;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        text-align: center;
+    }
+}
+
+/*深白按钮*/
+.operation-light-but {
+    min-width: $ButWidth;
+    height: 60px;
+    border: 1px solid #ffffff;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: #ffffff;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+
+    @media screen and (min-width: $MobileWidth-M) {
+        &:hover {
+            min-width: $ButWidth;
+            height: 60px;
+            border: 1px solid #ffffff;
+            box-sizing: border-box;
+            border-radius: 10px;
+            background-color: #e6e6ee;
+            color: #15163d;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            text-align: center;
+            animation-duration: 0.5s;
+        }
+    }
+
+    @media screen and (max-width: $MobileWidth-M) {
+        min-width: $BoxButWidth-M;
+        height: 60px;
+        border: 1px solid #ffffff;
+        box-sizing: border-box;
+        border-radius: 10px;
+        background-color: #15163d;
+        color: #ffffff;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        text-align: center;
+    }
+}
+
+/*白色hover*/
+.operation-lightblue-but {
+    min-width: $ButWidth;
+    height: 60px;
+    border: 1px solid #ffffff;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: #15163d;
+    color: #ffffff;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+
+    @media screen and (min-width: $MobileWidth-M) {
+        &:hover {
+            min-width: $ButWidth;
+            height: 60px;
+            border: 1px solid #ffffff;
+            box-sizing: border-box;
+            border-radius: 10px;
+            background-color: #35366d;
+            color: #ffffff;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            text-align: center;
+            animation-duration: 0.5s;
+        }
+    }
+
+    @media screen and (max-width: $MobileWidth-M) {
+        min-width: $BoxButWidth-M;
+        height: 60px;
+        border: 1px solid #ffffff;
+        box-sizing: border-box;
+        border-radius: 10px;
+        background-color: #15163d;
+        color: #ffffff;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        text-align: center;
+    }
+}
+
+/*框呗白色按钮*/
+.operation-lightBox-but {
+    min-width: 250px;
+    height: 60px;
+    border: 1px solid #ffffff;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: #ffffff;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+
+    @media screen and (min-width: $MobileWidth-M) {
+        &:hover {
+            min-width: 250px;
+            height: 60px;
+            border: 1px solid #ffffff;
+            box-sizing: border-box;
+            border-radius: 10px;
+            background-color: #e6e6ee;
+            color: #15163d;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            text-align: center;
+            animation-duration: 0.5s;
+        }
+    }
+
+    @media screen and (max-width: $MobileWidth-M) {
+        min-width: $BoxButWidth-M;
+        height: 60px;
+        border: 1px solid #ffffff;
+        box-sizing: border-box;
+        border-radius: 10px;
+        background-color: #15163d;
+        color: #ffffff;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        text-align: center;
+    }
+}
+
+/*切换网络*/
+.network-lightblue-but {
+    min-width: $ButWidth;
+    height: 40px;
+    border: 1px solid #ffffff;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: #15163d;
+    color: #ffffff;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+
+    @media screen and (min-width: $MobileWidth-M) {
+        &:hover {
+            min-width: $ButWidth;
+            height: 40px;
+            border: 1px solid #ffffff;
+            box-sizing: border-box;
+            border-radius: 10px;
+            background-color: #35366d;
+            color: #ffffff;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            text-align: center;
+            animation-duration: 0.5s;
+        }
+    }
+
+    @media screen and (max-width: $MobileWidth-M) {
+        min-width: $BoxButWidth-M;
+        height: 40px;
+        border: 1px solid #ffffff;
+        box-sizing: border-box;
+        border-radius: 10px;
+        background-color: #15163d;
+        color: #ffffff;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        text-align: center;
+    }
+}
+
+/*警告弹窗*/
+.Alert-err {
+    width: 100%;
+    max-width: 1400px;
+    height: auto;
+    min-height: 84px;
+    margin: 0 auto;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    z-index: 99999;
+
+    .ant-alert-info {
+        width: 400px;
+        margin: 22px 26px;
+
+        @media screen and (max-width: $MobileWidth-M) {
+            max-width: 82%;
+        }
+    }
+}
+
+
+/*弹窗样式*/
+.ant-modal-content {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
